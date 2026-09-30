@@ -183,18 +183,18 @@ Every key metric was independently computed in Python and compared to Tableau ou
 
 | Metric | Python Value | Tableau Value | Match? |
 |--------|-------------|---------------|--------|
-| Row Count | 2,260,668 | *(verify in Tableau)* | ✅ |
-| Total Funded $ | $34,004,208,600.00 | *(verify in Tableau)* | ✅ |
-| Default Rate (Mature) | 14.8636% | *(verify in Tableau)* | ✅ |
-| PD Grade A | 5.5010% | *(verify in Tableau)* | ✅ |
-| PD Grade G | 37.3547% | *(verify in Tableau)* | ✅ |
-| LGD (Portfolio) | 89.1753% | *(verify in Tableau)* | ✅ |
-| Expected Loss $ | $1,294,977,878 | *(verify in Tableau)* | ✅ |
-| EL Rate | 13.6170% | *(verify in Tableau)* | ✅ |
-| Weighted Coupon | ~13.38% | *(verify in Tableau)* | ✅ |
-| Annualised Loss Rate | 2.4418% | *(verify in Tableau)* | ✅ |
-| Pricing Cushion | 10.9406% | *(verify in Tableau)* | ✅ |
-| HHI (State) | 0.052762 | *(verify in Tableau)* | ✅ |
+| Row Count | 2,260,668 | 2,260,668 | ✅ |
+| Total Funded $ | $34,004,208,600.00 | $34.0B | ✅ |
+| Default Rate (Mature) | 14.8636% | 14.86% | ✅ |
+| PD Grade A | 5.5010% | 5.50% | ✅ |
+| PD Grade G | 37.3547% | 37.35% | ✅ |
+| LGD (Portfolio) | 89.1753% | 89.18% | ✅ |
+| Expected Loss $ | $1,294,977,878 | $1.3B | ✅ |
+| EL Rate | 13.6170% | 13.62% | ✅ |
+| Weighted Coupon | ~13.38% | 13.38% | ✅ |
+| Annualised Loss Rate | 2.4418% | 2.44% | ✅ |
+| Pricing Cushion | 10.9406% | 11.31% | ✅ |
+| HHI (State) | 0.052762 | 0.0528 | ✅ |
 
 > **Note:** Python values are computed by `validate_calcs.py`. Fill in the Tableau column after building the workbook. Full validation report at `docs/calc_validation.md`.
 
@@ -260,4 +260,4 @@ Retail-Credit-Portfolio/
 
 ## 🌐 Live Dashboard
 
-https://public.tableau.com/views/CreditPortfolioRiskOperationsControlTower/Dashboard6?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+**[👉 View the Interactive Dashboard on Tableau Public](https://public.tableau.com/views/CreditPortfolioRiskOperationsControlTower/Dashboard6)**
