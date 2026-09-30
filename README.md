@@ -260,4 +260,4 @@ Retail-Credit-Portfolio/
 
 ## 🌐 Live Dashboard
 
-[View on Tableau Public](#) *(link to be added after publishing)*
+https://public.tableau.com/views/CreditPortfolioRiskOperationsControlTower/Dashboard6?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
