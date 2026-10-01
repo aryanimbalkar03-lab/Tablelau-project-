@@ -260,4 +260,4 @@ Retail-Credit-Portfolio/
 
 ## 🌐 Live Dashboard
 
-**[👉 View the Interactive Dashboard on Tableau Public](https://public.tableau.com/views/CreditPortfolioRiskOperationsControlTower/Dashboard6)**
+**[👉 View the Interactive Dashboard on Tableau Public](https://public.tableau.com/views/CreditPortfolioRiskOperationsControlTower/Dashboard1)**
