@@ -157,7 +157,7 @@ The `prep.py` script manages the data ingestion and preparation:
 
 ### D5: Stress Test & Delinquency Watchlist
 - **Audience**: Risk analysts, operations
-- **Key elements**: Parameter controls (PD Multiplier, LGD Add-on), waterfall chart (Gantt-bar method), stress line vs coupon, delinquency watchlist (exposure by bucket × grade)
+- **Key elements**: Parameter controls (PD Multiplier, LGD Add-on), stacked bar waterfall chart, stress line vs coupon, delinquency watchlist (exposure by bucket × grade)
 - **Techniques**: Parameters, Gantt-bar waterfall, highlight table, RANK
 
 ### D6: Data Quality & Definitions
@@ -172,9 +172,8 @@ The `prep.py` script manages the data ingestion and preparation:
 | Feature | Where Used |
 |---------|------------|
 | **FIXED LOD** | PD by Grade, LGD Portfolio |
-| **INCLUDE LOD** | Sub-grade average variance |
 | **Table Calcs (RUNNING_SUM, WINDOW_SUM, WINDOW_AVG, LOOKUP, RANK)** | Pareto, HHI, QoQ%, vintage trend |
-| **Parameters & Parameter Actions** | Stress test, View By toggle, metric switcher |
+| **Parameters** | Stress test, View By toggle, metric switcher |
 | **Set Actions** | Geography dashboard state highlighting |
 | **Dynamic Zone Visibility** | Executive dashboard view toggle |
 | **Viz-in-Tooltip** | Vintage sparklines |
@@ -204,9 +203,9 @@ Every key metric was independently computed in Python and compared to Tableau ou
 | LGD (Portfolio) | 89.1753% | 89.18% |
 | Expected Loss $ | $1,294,977,878 | $1.3B |
 | EL Rate | 13.6170% | 13.62% |
-| Weighted Coupon | ~13.38% | 13.38% |
+| Weighted Coupon | 13.38% | 13.38% |
 | Annualised Loss Rate | 2.4418% | 2.44% |
-| Pricing Cushion | 10.9406% | 11.31% |
+| Pricing Cushion | 10.94% | 10.94% |
 | HHI (State) | 0.052762 | 0.0528 |
 
 > **Note:** Python values are computed by `validate_calcs.py`. Fill in the Tableau column after building the workbook. Full validation report at `docs/calc_validation.md`.
@@ -242,7 +241,7 @@ Every key metric was independently computed in Python and compared to Tableau ou
 ## 11. Project Structure
 
 ```text
-Retail-Credit-Portfolio/
+Tablelau-project-/
 ├── README.md                          # This file
 ├── prep/
 │   ├── prep.py                        # Data download & cleaning
