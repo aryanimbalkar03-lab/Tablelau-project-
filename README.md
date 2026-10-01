@@ -157,7 +157,7 @@ The `prep.py` script manages the data ingestion and preparation:
 
 ### D5: Stress Test & Delinquency Watchlist
 - **Audience**: Risk analysts, operations
-- **Key elements**: Parameter controls (PD Multiplier, LGD Add-on), stacked bar waterfall chart, stress line vs coupon, delinquency watchlist (exposure by bucket × grade)
+- **Key elements**: Parameter controls (PD Multiplier, LGD Add-on), stacked bar waterfall chart, delinquency watchlist (exposure by bucket × grade)
 - **Techniques**: Parameters, stacked bar waterfall, highlight table, RANK
 
 ### D6: Data Quality & Definitions
@@ -217,11 +217,9 @@ Every key metric was independently computed in Python and compared to Tableau ou
 
 2. **2007Q4 was the worst-performing vintage** at 29.56% default rate among mature loans (pre-crisis originations), though this cohort is extremely small (<300 loans). Post-2014 vintages, which contain the bulk of the volume, stabilised in the 13-15% range.
 
-3. **California dominates at 14.13% of funded volume.** Top 5 states (CA, NY, TX, FL, NJ) hold 41.89% of the book. HHI = 0.0528 indicates moderate concentration - not overly diversified, not dangerously concentrated.
+3. **California dominates at 14.13% of funded volume.** Top 5 states (CA, TX, NY, FL, IL) hold 41.89% of the book. HHI = 0.0528 indicates low concentration - highly diversified across the lower 48.
 
-4. **The portfolio can withstand massive stress.** Because the annualised pricing cushion is a robust ~10.9%, the portfolio's annual default volume would have to increase drastically before expected losses wipe out the interest income.
-
-5. **FICO < 660 segments carry disproportionate lifetime risk.** While overall annualised metrics look profitable, the *lifetime* default rates for FICO < 660 cells reach 27-33%. Even the 660-699 band shows elevated risk across all DTI levels. Only FICO 740+ segments show consistently safe default floors.
+4. **The 660-699 FICO band carries disproportionate lifetime risk.** While overall annualised portfolio metrics look highly profitable, the *lifetime* default rates for the 660-699 cohort show heavily elevated risk across all DTI levels. Only FICO 740+ segments show consistently safe default floors. *(Note: The <660 FICO band exhibits even steeper 30%+ default rates, but volume is negligible due to strict underwriting cutoffs).*
 
 > *All numbers derived from 2,260,668 LendingClub loans (2007–2018). See `docs/calc_validation.md` for full breakdown.*
 
