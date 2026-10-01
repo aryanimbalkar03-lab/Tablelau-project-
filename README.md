@@ -1,6 +1,6 @@
 ﻿# Credit Portfolio Risk & Operations Control Tower (Tableau)
 
-[**Live Dashboard on Tableau Public**](https://public.tableau.com/app/profile/aryan.nimbalkar4447/viz/CreditPortfolioRiskOperationsControlTower/ExecutiveControlTower)
+[**Live Dashboard on Tableau Public**](https://public.tableau.com/views/CreditPortfolioRiskOperationsControlTower/ExecutiveControlTower?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 A six-dashboard Tableau suite on 2,260,668 LendingClub loans (2007 to 2018 Q4). It turns a raw loan tape into one governed set of risk and operations metrics: expected loss, vintage performance, pricing adequacy, concentration, stress testing, delinquency monitoring and a data-quality layer.
 
