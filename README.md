@@ -203,21 +203,21 @@ Every key metric was independently computed in Python and compared to Tableau ou
 | LGD (Portfolio) | 89.1753% | 89.18% |
 | Expected Loss $ | $1,294,977,878 | $1.3B |
 | EL Rate | 13.6170% | 13.62% |
-| Weighted Coupon | 13.38% | 13.38% |
+| Weighted Coupon | 12.53% | 12.53% |
 | Annualised Loss Rate | 2.4418% | 2.44% |
-| Pricing Cushion | 10.94% | 10.94% |
-| HHI (State) | 0.052762 | 0.0528 |
+| Pricing Cushion | 10.09% | 10.09% |
+| HHI (State) | 507.1 | 507.1 |
 
 
 ---
 
 ## 9. Key Findings (Data-Driven)
 
-1. **All grades show a positive Pricing Cushion on an annualised basis.** Grade A has the narrowest relative cushion (Coupon 7.23% vs Loss Rate 0.78% = +6.46%), while Grade F is widest (23.25% vs 5.06% = +18.19%). The portfolio easily absorbs its 2.44% annualised loss rate with a 13.38% weighted coupon.
+1. **All grades show a positive Pricing Cushion on an annualised basis.** Grade A has the narrowest relative cushion (Coupon 7.23% vs Loss Rate 0.78% = +6.46%), while Grade F is widest (23.25% vs 5.06% = +18.19%). The portfolio easily absorbs its 2.44% annualised loss rate with a 12.53% weighted coupon.
 
 2. **2007Q4 was the worst-performing vintage** at 29.56% default rate among mature loans (pre-crisis originations), though this cohort is extremely small (<300 loans). Post-2014 vintages, which contain the bulk of the volume, stabilised (for 36-month terms) in the 13-15% range.
 
-3. **California dominates at 14.13% of Live Exposure.** Top 5 states (CA, TX, NY, FL, IL) hold 41.89% of the book. HHI = 0.0528 indicates low concentration - highly diversified across the lower 48.
+3. **California dominates at 14.13% of Live Exposure.** Top 5 states (CA, TX, NY, FL, IL) hold 41.89% of the book. HHI = 507.1 indicates low concentration - highly diversified across the lower 48.
 
 4. **The 660-699 FICO band carries disproportionate lifetime risk.** While overall annualised portfolio metrics look highly profitable, the *lifetime* default rates for the 660-699 cohort show heavily elevated risk across all DTI levels. Only FICO 740+ segments show consistently safe default floors. *(Note: The <660 FICO band exhibits even steeper 30%+ default rates, but volume is negligible due to strict underwriting cutoffs).*
 
