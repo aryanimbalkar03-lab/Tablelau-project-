@@ -215,7 +215,7 @@ Every key metric was independently computed in Python and compared to Tableau ou
 
 1. **All grades show a positive Pricing Cushion on an annualised basis.** Grade A has the narrowest relative cushion (Coupon 7.23% vs Loss Rate 0.78% = +6.46%), while Grade F is widest (23.25% vs 5.06% = +18.19%). The portfolio easily absorbs its 2.44% annualised loss rate with a 13.38% weighted coupon.
 
-2. **2007Q4 was the worst-performing vintage** at 29.56% default rate among mature loans (pre-crisis originations), though this cohort is extremely small (<300 loans). Post-2014 vintages, which contain the bulk of the volume, stabilised in the 13-15% range.
+2. **2007Q4 was the worst-performing vintage** at 29.56% default rate among mature loans (pre-crisis originations), though this cohort is extremely small (<300 loans). Post-2014 vintages, which contain the bulk of the volume, stabilised (for 36-month terms) in the 13-15% range.
 
 3. **California dominates at 14.13% of funded volume.** Top 5 states (CA, TX, NY, FL, IL) hold 41.89% of the book. HHI = 0.0528 indicates low concentration - highly diversified across the lower 48.
 
