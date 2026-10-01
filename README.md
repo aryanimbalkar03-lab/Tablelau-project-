@@ -1,4 +1,4 @@
-# 🏦 Credit Portfolio Risk & Operations Control Tower (Tableau)
+# Credit Portfolio Risk & Operations Control Tower (Tableau)
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
@@ -8,7 +8,7 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 1. [Problem Statement](#1-problem-statement)
 2. [Tools & Stack](#2-tools--stack)
 3. [Data Pipeline](#3-data-pipeline)
@@ -24,7 +24,7 @@
 
 ---
 
-## 🎯 1. Problem Statement
+## 1. Problem Statement
 
 Loan operations and risk teams receive static monthly reports. They can't see which vintages are deteriorating, whether pricing covers realised loss, how concentrated the book is, how much expected loss moves under stress, or how trustworthy the underlying data is. Each team also defines 'default rate' differently.
 
@@ -34,7 +34,7 @@ Loan operations and risk teams receive static monthly reports. They can't see wh
 
 ---
 
-## 🛠️ 2. Tools & Stack
+## 2. Tools & Stack
 
 | Tool | Use | Cost |
 |------|-----|------|
@@ -46,7 +46,7 @@ Loan operations and risk teams receive static monthly reports. They can't see wh
 
 ---
 
-## ⚙️ 3. Data Pipeline
+## 3. Data Pipeline
 
 The `prep.py` script manages the data ingestion and preparation:
 - **Downloads** the dataset from Kaggle via `kagglehub`.
@@ -59,7 +59,7 @@ The `prep.py` script manages the data ingestion and preparation:
 
 ---
 
-## 🗄️ 4. Data Model (Tableau)
+## 4. Data Model (Tableau)
 
 - **Connect** > Text file > `loans_clean.csv`. Choose **Extract**.
 - **Set Data Types:** `issue_date`, `last_pymnt_date` = Date; `addr_state` geographic role = State/Province (United States).
@@ -70,7 +70,7 @@ The `prep.py` script manages the data ingestion and preparation:
 
 ---
 
-## 🧮 5. Metric Definitions & Calculation Library
+## 5. Metric Definitions & Calculation Library
 
 ### Flags
 | Calculated Field | Formula | Notes |
@@ -120,7 +120,7 @@ The `prep.py` script manages the data ingestion and preparation:
 
 ---
 
-## 📊 6. Dashboard Tour (6 Dashboards)
+## 6. Dashboard Tour (6 Dashboards)
 
 ### D1: Executive Control Tower
 - **Audience**: C-suite, senior leadership
@@ -154,7 +154,7 @@ The `prep.py` script manages the data ingestion and preparation:
 
 ---
 
-## 🚀 7. Advanced Tableau Features Used
+## 7. Advanced Tableau Features Used
 
 | Feature | Where Used |
 |---------|------------|
@@ -177,30 +177,30 @@ The `prep.py` script manages the data ingestion and preparation:
 
 ---
 
-## 🧪 8. Calculation Validation
+## 8. Calculation Validation
 
 Every key metric was independently computed in Python and compared to Tableau output to ensure complete accuracy.
 
 | Metric | Python Value | Tableau Value | Match? |
 |--------|-------------|---------------|--------|
-| Row Count | 2,260,668 | 2,260,668 | ✅ |
-| Total Funded $ | $34,004,208,600.00 | $34.0B | ✅ |
-| Default Rate (Mature) | 14.8636% | 14.86% | ✅ |
-| PD Grade A | 5.5010% | 5.50% | ✅ |
-| PD Grade G | 37.3547% | 37.35% | ✅ |
-| LGD (Portfolio) | 89.1753% | 89.18% | ✅ |
-| Expected Loss $ | $1,294,977,878 | $1.3B | ✅ |
-| EL Rate | 13.6170% | 13.62% | ✅ |
-| Weighted Coupon | ~13.38% | 13.38% | ✅ |
-| Annualised Loss Rate | 2.4418% | 2.44% | ✅ |
-| Pricing Cushion | 10.9406% | 11.31% | ✅ |
-| HHI (State) | 0.052762 | 0.0528 | ✅ |
+| Row Count | 2,260,668 | 2,260,668 |  |
+| Total Funded $ | $34,004,208,600.00 | $34.0B |  |
+| Default Rate (Mature) | 14.8636% | 14.86% |  |
+| PD Grade A | 5.5010% | 5.50% |  |
+| PD Grade G | 37.3547% | 37.35% |  |
+| LGD (Portfolio) | 89.1753% | 89.18% |  |
+| Expected Loss $ | $1,294,977,878 | $1.3B |  |
+| EL Rate | 13.6170% | 13.62% |  |
+| Weighted Coupon | ~13.38% | 13.38% |  |
+| Annualised Loss Rate | 2.4418% | 2.44% |  |
+| Pricing Cushion | 10.9406% | 11.31% |  |
+| HHI (State) | 0.052762 | 0.0528 |  |
 
 > **Note:** Python values are computed by `validate_calcs.py`. Fill in the Tableau column after building the workbook. Full validation report at `docs/calc_validation.md`.
 
 ---
 
-## 💡 9. Key Findings (Data-Driven)
+## 9. Key Findings (Data-Driven)
 
 1. **All grades show a positive Pricing Cushion on an annualised basis.** Grade A has the narrowest relative cushion (Coupon 7.23% vs Loss Rate 0.78% = +6.46%), while Grade F is widest (23.25% vs 5.06% = +18.19%). However, the forward-looking EL Rate (13.62%) based on PD × LGD × EAD slightly exceeds the weighted coupon (~13.38%), signalling that the live book carries more risk than the realised-loss history suggests.
 
@@ -216,7 +216,7 @@ Every key metric was independently computed in Python and compared to Tableau ou
 
 ---
 
-## ⚠️ 10. Limitations
+## 10. Limitations
 
 - Dataset ends Q4 2018; no post-COVID stress data.
 - LGD is portfolio-level (not segment-level) due to data granularity.
@@ -226,7 +226,7 @@ Every key metric was independently computed in Python and compared to Tableau ou
 
 ---
 
-## 📂 11. Project Structure
+## 11. Project Structure
 
 ```text
 Retail-Credit-Portfolio/
@@ -248,7 +248,7 @@ Retail-Credit-Portfolio/
 
 ---
 
-## 🔧 12. How to Reproduce
+## 12. How to Reproduce
 
 1. **Clone the repo**
 2. Install dependencies: `pip install -r requirements.txt`
@@ -258,6 +258,6 @@ Retail-Credit-Portfolio/
 
 ---
 
-## 🌐 Live Dashboard
+## Live Dashboard
 
-**[👉 View the Interactive Dashboard on Tableau Public](https://public.tableau.com/shared/WQXCR3GD7)**
+**[View the Interactive Dashboard on Tableau Public](https://public.tableau.com/shared/WQXCR3GD7?:display_count=n&:origin=viz_share_link)**
