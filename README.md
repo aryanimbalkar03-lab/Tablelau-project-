@@ -45,8 +45,6 @@ Loan operations and risk teams receive static monthly reports. They can't see wh
 
 **Objective:** One governed data model with one metric definition per KPI, feeding self-serve dashboards for three audiences: executive (summary), risk analyst (vintage, pricing, concentration, stress), operations (delinquency watchlist, data quality).
 
-**Why it matches a Data Analyst JD:** Collect and validate large data, build dashboards and metrics reporting, translate business needs into data solutions, explain findings to non-technical stakeholders, adhere to controls (the definitions and validation layer).
-
 ---
 
 ## 2. Tools & Stack
