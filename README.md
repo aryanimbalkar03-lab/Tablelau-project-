@@ -10,7 +10,7 @@
 
 ## Architecture & Workflow
 
-\\mermaid
+```mermaid
 graph TD
     A[Kaggle Hub API] -->|Download| B(Raw CSV: 1.6 GB)
     B --> C{prep.py}
@@ -22,7 +22,7 @@ graph TD
     G --> H[6 Executive Dashboards]
     G --> I{validate_calcs.py}
     I -->|Reconciliation| J[Audit Report]
-\
+```
 ## Table of Contents
 1. [Problem Statement](#1-problem-statement)
 2. [Tools & Stack](#2-tools--stack)
