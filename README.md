@@ -142,7 +142,7 @@ The `prep.py` script manages the data ingestion and preparation:
 
 ### D2: Vintage & Cohort Performance
 - **Audience**: Risk analysts
-- **Key elements**: Heatmap (Vintage × Grade, colour = Default Rate), small-multiple lines by term, 4-quarter WINDOW_AVG trend, QoQ change, viz-in-tooltip sparklines
+- **Key elements**: Heatmap (Vintage × Grade, colour = Default Rate), default rate by term, 4-quarter WINDOW_AVG trend, QoQ change, viz-in-tooltip sparklines
 - **Techniques**: WINDOW_AVG, LOOKUP table calcs, viz-in-tooltip, context filters (Mature Flag)
 
 ### D3: Pricing vs Loss
@@ -217,7 +217,7 @@ Every key metric was independently computed in Python and compared to Tableau ou
 
 2. **2007Q4 was the worst-performing vintage** at 29.56% default rate among mature loans (pre-crisis originations), though this cohort is extremely small (<300 loans). Post-2014 vintages, which contain the bulk of the volume, stabilised (for 36-month terms) in the 13-15% range.
 
-3. **California dominates at 14.13% of funded volume.** Top 5 states (CA, TX, NY, FL, IL) hold 41.89% of the book. HHI = 0.0528 indicates low concentration - highly diversified across the lower 48.
+3. **California dominates at 14.13% of Live Exposure.** Top 5 states (CA, TX, NY, FL, IL) hold 41.89% of the book. HHI = 0.0528 indicates low concentration - highly diversified across the lower 48.
 
 4. **The 660-699 FICO band carries disproportionate lifetime risk.** While overall annualised portfolio metrics look highly profitable, the *lifetime* default rates for the 660-699 cohort show heavily elevated risk across all DTI levels. Only FICO 740+ segments show consistently safe default floors. *(Note: The <660 FICO band exhibits even steeper 30%+ default rates, but volume is negligible due to strict underwriting cutoffs).*
 
@@ -227,6 +227,8 @@ Every key metric was independently computed in Python and compared to Tableau ou
 
 ## 10. Limitations
 
+- PD comes from mature 2007-2015 cohorts but is applied to a live book dominated by 2016-2018 loans.
+- Live loans are survivors, so lifetime PD on their remaining balance overstates risk.
 - Dataset ends Q4 2018; no post-COVID stress data.
 - LGD is portfolio-level (not segment-level) due to data granularity.
 - Tableau Public doesn't support live connections or row-level security.
